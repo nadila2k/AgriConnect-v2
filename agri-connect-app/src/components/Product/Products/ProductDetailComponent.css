@@ -1,0 +1,70 @@
+.product-detail {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px; /* Increased padding */
+  border-radius: 15px; /* Slightly rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  background-color: #fff;
+  font-family: 'Arial, sans-serif';
+  transition: transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.product-detail:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.product-detail-image {
+  width: 100%; /* Ensure image doesn't exceed the container */
+  max-width: 450px; /* Default width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Slightly rounded corners */
+  margin: 0 auto 20px; /* Center the image horizontally */
+  display: block; /* Ensure the image is displayed as a block element */
+}
+
+.product-detail-name {
+  font-size: 2.5em; /* Larger font size */
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center; /* Center the text */
+}
+
+.product-detail-description {
+  text-align: center;   /* centers the text horizontally */
+  font-size: 1.8rem;    /* optional: adjust size */
+  font-weight: bold;    /* optional: make it stand out */
+  margin: 20px 0;       /* optional: spacing top/bottom */ /* Justify text for better readability */
+}
+
+.product-detail-info {
+  text-align: center; /* Center align the product details */
+  padding: 15px;
+  border-top: 1px solid #eaeaea; /* Top border for separation */
+}
+
+.product-detail-price,
+.product-detail-quantity,
+.product-detail-email,
+.product-detail-district,
+.product-detail-phone {
+  font-size: 1.1em; /* Slightly larger font size */
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.product-detail-price span,
+.product-detail-quantity span,
+.product-detail-email span,
+.product-detail-district span,
+.product-detail-phone span {
+  font-weight: bold; /* Bold text for key information */
+  color: #00796b; /* Green color for emphasis */
+}
+
+.loading,
+.product-not-found {
+  text-align: center;
+  font-size: 1.5em;
+  color: #888;
+  margin-top: 50px; /* Added margin for better positioning */
+}

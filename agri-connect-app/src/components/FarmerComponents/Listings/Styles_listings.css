@@ -1,0 +1,215 @@
+/* Title Styling */
+.vendor-manager h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .vendor-manager p{
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center; 
+        border-bottom: 2px solid #ccc; 
+        padding-bottom: 10px; 
+        display: flex; 
+  }
+  
+  /* Form Layout */
+  .vendor-manager form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .vendor-manager label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .vendor-manager input[type="text"],
+  .vendor-manager input[type="number"],
+  .vendor-manager textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .vendor-manager input[type="file"] {
+    padding: 5px;
+  }
+  
+  /* Centered Add Product Button with Green Background */
+  .centered-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-product-button {
+    padding: 12px 20px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-product-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  /* Table Styling */
+  .vendor-manager table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .vendor-manager th,
+  .vendor-manager td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .vendor-manager th {
+    background-color: #f1f1f1;
+  }
+  
+  .vendor-manager img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Stack Update and Delete Buttons */
+  .vendor-manager td {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vendor-manager td button {
+    background-color: #ffc107; /* Yellow for Update */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between Update and Delete */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .vendor-manager td button:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+  }
+  
+  /* Delete Button Specific Styling */
+  .vendor-manager td .delete-product-button {
+    background-color: #dc3545; /* Red for Delete */
+    margin-bottom: 5px;
+  }
+  
+  .vendor-manager td .delete-product-button:hover {
+    background-color: #c82333;
+  }
+  
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+ 
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    max-width: 600px; 
+    max-height: 80vh; 
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  
+  .add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 65vh; 
+    overflow-y: auto; 
+  }
+  
+  .add-product-form div {
+    margin-bottom: 10px;
+  }
+  
+ 
+  .submit-product-button,
+  .close-popup-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-product-button {
+    background-color: #007bff; 
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .submit-product-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .close-popup-button {
+    background-color: #6c757d; 
+    color: white;
+  }
+  
+  .close-popup-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

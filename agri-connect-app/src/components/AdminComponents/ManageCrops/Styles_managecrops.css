@@ -1,0 +1,122 @@
+ 
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  
+  
+  .crop-buttons {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .crop-button {
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 0px; 
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button-icon {
+    margin-right: 8px; 
+  }
+  
+  
+  .add-crop-button:hover {
+    background-color: #007BB5;
+  }
+  
+  .update-crop-button {
+    background-color: #ff5500;
+  }
+  
+  .update-crop-button:hover {
+    background-color: #ff9305;
+  }
+  
+  .add-crop-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text field and button */
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Optional: Add space below the container */
+}
+
+.add-crop-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px; /* Adjust the width as needed */
+}
+
+.add-crop-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #45a049;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.add-crop-container button:hover {
+    background-color: #007BB5;
+}
+
+.update-crop-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.update-crop-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.update-crop-form h2 {
+  margin: 0 0 10px 0;
+}
+
+.update-crop-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-crop-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.update-crop-form button:hover {
+  background-color: #256528;
+}

@@ -1,0 +1,115 @@
+.product-section {
+  padding: 40px 20px; /* Increased padding for better spacing */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-title {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #00796b; /* Teal title color */
+  font-weight: bold;
+}
+
+.product-subtitle {
+  color: #555; /* Darker gray for subtitle */
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.category-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.category-button {
+  background-color: #ffffff; /* White background for buttons */
+  border: 2px solid #00796b; /* Green border */
+  color: #00796b; /* Teal text */
+  padding: 12px 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+  font-size: 1.1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.category-button:hover {
+  background-color: #00796b; /* Teal background on hover */
+  color: white; /* White text on hover */
+}
+
+.category-button.active {
+  background-color: #00796b; /* Teal color for active button */
+  color: white; /* White text for active button */
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Increased gap between cards */
+}
+
+.product-card {
+  background-color: white; /* White background for cards */
+  border: 2px solid #00796b; /* Green border */
+  border-radius: 10px;
+  width: 300px; /* Adjusted width for cards */
+  height: auto; /* Auto height to accommodate content */
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333; /* Darker text color for better readability */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.product-image {
+  height: 200px; /* Fixed height for uniformity */
+  width: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Space below image */
+}
+
+.product-name {
+  font-size: 1.6em;
+  margin: 10px 0;
+  color: #00796b; /* Teal color for product name */
+}
+
+.product-price,
+.product-quantity,
+.product-description {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #555; /* Darker gray for better readability */
+}
+
+.search-bar {
+  margin-top: 20px; /* Spacing above search bar */
+  padding: 12px;
+  width: 100%;
+  max-width: 400px; /* Adjusted max width */
+  border: 2px solid #00796b; /* Teal border */
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #005f5f; /* Darker teal on focus */
+  outline: none; /* Remove outline */
+}

@@ -1,0 +1,50 @@
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.article-intro {
+  text-align: center;   /* center the intro text */
+  max-width: 800px;     /* keep it nicely readable */
+  margin: 0 auto 30px;  /* center + spacing below */
+  font-size: 1rem;
+  color: #555;
+}
+
+.article-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-image {
+  width: 100%;
+  height: 250px;       /* fixed height for all blog images */
+  object-fit: cover;   /* crop + scale to fill the area */
+  display: block;
+}
+
+.article-content {
+  padding: 15px;
+  flex: 1;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.article-description {
+  font-size: 0.95rem;
+  color: #444;
+}
