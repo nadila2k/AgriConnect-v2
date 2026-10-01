@@ -1,28 +1,10 @@
-const Months = require("../models/monthModel.js");
+const monthService = require("../service/month.service");
+const asyncHandler = require("../middleware/asyncHandler");
+const { successResponse } = require("../utils/apiResponse");
 
-const getAllMonth = async (req, res) => {
-  console.log("getAllMonth called");
-
-  try {
-    console.log("Fetching all months...");
-    
-    const months = await Months.findAll({
-      attributes: ['id', 'month'],
-    });
-    console.log(months)
-    res.status(200).json({
-      success: true,
-      data: months,
-    });
-    console.log("Fetched months:", months);
-  } catch (error) {
-    console.error("Error fetching months:", error);
-    res.status(500).json({
-      success: false,
-      message: "Failed to retrieve months",
-      error: error.message,
-    });
-  }
-};
+const getAllMonth = asyncHandler(async (req, res) => {
+  const months = await monthService.getAllMonth();
+  return successResponse(res, 200, "Months retrieved successfully", months);
+});
 
 module.exports = { getAllMonth };

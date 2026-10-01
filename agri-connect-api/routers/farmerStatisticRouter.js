@@ -1,11 +1,16 @@
 const express = require("express");
 const router = express.Router();
+const { createFarmerStatistic, updateFarmerStatistic, getAllFarmerStatistic, getFarmerStatistic } = require("../controller/farmerStatisticController");
+const validate = require("../middleware/validate");
+const validateId = require("../middleware/validateId");
+const { createSchema, updateSchema } = require("../validators/farmerStatistic.validator");
 
-const { createFarmerStatistic, updateFarmerStatistic ,getAllFarmerStatistic,getFarmerStatistic  } = require("../controller/farmerStatisticController");
+router.route("/")
+  .get(getAllFarmerStatistic)
+  .post(validate(createSchema), createFarmerStatistic);
 
-router.route("/").post(createFarmerStatistic).get(getAllFarmerStatistic);
-router.route("/:id").put(updateFarmerStatistic).get(getFarmerStatistic);
-
-
+router.route("/:id")
+  .get(validateId, getFarmerStatistic) // Note: this is userId in the controller logic
+  .put(validateId, validate(updateSchema), updateFarmerStatistic);
 
 module.exports = router;
